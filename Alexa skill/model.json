@@ -1,0 +1,177 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "lego dinosaur",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "MoveIntent",
+                    "slots": [
+                        {
+                            "name": "Direction",
+                            "type": "DirectionType"
+                        },
+                        {
+                            "name": "Duration",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "{Direction} now",
+                        "{Direction} {Duration} seconds",
+                        "move {Direction} for {Duration} seconds"
+                    ]
+                },
+                {
+                    "name": "SetCommandIntent",
+                    "slots": [
+                        {
+                            "name": "Command",
+                            "type": "CommandType"
+                        }
+                    ],
+                    "samples": [
+                        "activate {Command} mode",
+                        "activate {Command}"
+                    ]
+                },
+                {
+                    "name": "BasketballIntent",
+                    "slots": [],
+                    "samples": [
+                        "trex play basketball",
+                        "basketball",
+                        "play basketball"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "DirectionType",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "brake"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "go backward"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "go forward"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "go right"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "go left"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "right"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "left"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "backwards"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "backward"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "forwards"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "forward"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "CommandType",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "dance mode"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dancing"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sentry mode"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sentry"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "guard mode"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "guard"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "speech"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dance"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "basketball"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
